@@ -2,7 +2,6 @@ class Ship{
     constructor(length){
         this.length = length;
         this.ship = this.createShip(length);
-        this.hit = 0;
         this.sunk = isSunk();
     }
 
@@ -20,6 +19,18 @@ class Ship{
         return false;
     }
     
+    hit(index) {
+        this.ship[index].hit = true;
+    }
+
+    isSunk(){
+        for(let i = 0; i < this.length; i++){
+            if(!this.ship[index].hit){
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
 export default Ship;
