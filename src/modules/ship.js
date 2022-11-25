@@ -2,7 +2,7 @@ class Ship{
     constructor(length){
         this.length = length;
         this.ship = this.createShip(length);
-        this.sunk = isSunk();
+        this.sunk = false;
     }
 
     createShip(length){
@@ -11,12 +11,6 @@ class Ship{
             ship.push({hit: false});
         }
         return ship;
-    }
-
-    isSunk(){
-        if(this.hit == length)
-            return true;
-        return false;
     }
     
     hit(index) {

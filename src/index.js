@@ -1,4 +1,4 @@
-import Ship from "./modules/ship";
+import './style.css';
+import createBody from "./modules/domElements";
 
-let ship = new Ship(3);
-console.log(ship.ship);
+createBody();

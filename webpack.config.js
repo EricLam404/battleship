@@ -9,7 +9,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-        title: 'Development',
+        title: 'Battleship',
         }),
     ],
     mode: 'development',

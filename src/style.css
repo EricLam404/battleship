@@ -3,3 +3,33 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.game-container{
+    display: flex;
+    gap: calc(10vw + 150px);
+}
+
+.board {
+    display: flex;
+}
+
+.square{
+    height: 32px;
+    width: 32px;
+    border: 1px solid black;
+}
